@@ -18,7 +18,7 @@
     />
   </head>
   <body>
-    <div class="main-container">
+    <main class="main-container">
       <div class="container-left">
         <img class="img-logo" src="assets/logo.svg" alt="" />
         <section class="info-content">
@@ -31,18 +31,26 @@
             começar o dia melhor. perfeito para se preparar para codar ☕
           </p>
         </section>
+
         <form class="form-container">
           <h3>Insira seu e-mail:</h3>
-          <input type="text" placeholder="oi@rocketseat.com"/>
+          <div class="input-wrapper">
+            <input type="text" placeholder="oi@rocketseat.com"/>
+            <button type="submit">
+              <img src="assets/send.svg" alt="">
+            </button>
+          </div>
         </form>
+        
         <div class="read-link-container">
           <a class="read-link" href="/">deixe-me ler primeiro</a>
           <img src="assets/arrow-right.svg" alt="">
         </div>
       </div>
+      
       <div class="container-right">
         <img src="assets/read_news.jpg" alt="" />
       </div>
-    </div>
+    </main>
   </body>
 </html>

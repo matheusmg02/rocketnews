@@ -13,13 +13,16 @@
 }
 
 .main-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  height: 100vh;
 }
 
 .container-left {
-  padding: 50px 30px;
+  padding: 60px;
   background-color: var(--body-bg-color);
+  position: relative;
+  z-index: 2;
+  width: 50%;
 }
 
 .img-logo {
@@ -41,31 +44,52 @@
 }
 
 .info-subtitle {
-  font-family: 'League Spartan';
+  font-family: "League Spartan";
   font-size: 14px;
   font-weight: bold;
   color: #fff;
 }
 
 .info-description {
-  font-family: 'League Spartan';
+  font-family: "League Spartan";
   font-size: 14px;
   color: #fff;
 }
 
 .form-container {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  position: relative;
 }
 
 .form-container h3 {
-  font-family: 'League Spartan';
+  font-family: "League Spartan";
   color: var(--form-color);
   margin-bottom: 16px;
 }
 
-.form-container input {
+.input-wrapper {
+  position: relative;
+  width: 700px;
+}
+
+.input-wrapper input {
   height: 50px;
-  padding-left: 10px;
+  padding: 0 60px 0 15px;
+  outline: none;
+  width: 100%;
+  border: none;
+  border-left: #04d361 solid 4px;
+}
+
+.input-wrapper button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: var(--bg-button-color);
+  cursor: pointer;
 }
 
 .read-link-container {
@@ -75,13 +99,17 @@
 }
 
 .read-link {
-  font-family: 'League Spartan';
+  font-family: "League Spartan";
   color: var(--bg-button-color);
   text-decoration: none;
 }
 
+.container-right {
+  width: 50%;
+}
+
 .container-right img {
-  max-width: 100%;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
